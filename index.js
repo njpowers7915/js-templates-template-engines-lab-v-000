@@ -11,7 +11,7 @@ function createPost() {
 }
 
 function postNewPost(title, content, author) {
-  var 
+  var
 }
 
 
