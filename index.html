@@ -3,31 +3,9 @@
   <head>
     <title>JavaScript lodash Templates Lab</title>
   </head>
-
-
   <body>
-    <script id="page-template" type="text/x-lodash-template">
-      <div class="sidenav">
-      </div>
-      <main>
-        <form id="post-form" onSubmit="createPost()">
-          Title: <input type="text" id="postTitle"><br>
-          Content: <input type="textarea" id="postContent"><br>
-          Author: <input type="text" id="postAuthor"><br>
-          <input type="submit">
-          </form>
-      </main>
-        <COMMENTS-TEMPLATE>
-      </div>
-    </script>
     <main>
-
     </main>
-    <article></article>
-
-    <div id="comments-template"></div>
-
-
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
@@ -37,46 +15,5 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
-
-    <script id="page-template" type="text/x-lodash-template">
-      <div class="sidenav">
-      </div>
-      <main>
-        <form id="post-form" onSubmit="createPost()">
-          Title: <input type="text" id="postTitle"><br>
-          Content: <input type="textarea" id="postContent"><br>
-          Author: <input type="text" id="postAuthor"><br>
-          <input type="submit">
-          </form>
-      </main>
-        <COMMENTS-TEMPLATE>
-      </div>
-    </script>
-
-    <script id="post-template" type="text/x-lodash-template">
-      <article>
-        <header>TITLE</header>
-        <footer>AUTHOR</footer>
-      </article>
-    </script>
-
-    <script id="comments-template" type="text/x-lodash-template">
-      <div id="comments">
-      <form id="comment-form" onSubmit="postComment()">
-        Name: <input type="text" id="commenterName"><br>
-        Content: <input type="textarea" id="commentContent"><br>
-        <input type="submit">
-      </form>
-    </script>
-
-    <script id="comment-template" type="text/x-lodash-template">
-      Name: <div id="commenterName"><br>
-      <footer>
-        Content: <div id="commentContent"><br>
-      </footer>
-    </script>
-
-
-    <script></script>
   </body>
 </html>
