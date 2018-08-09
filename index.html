@@ -5,6 +5,10 @@
   </head>
   <body>
     <main>
+      <form id="post-form" onSubmit="createPost()">
+        Title: <input type="text" id="postTitle"><br>
+        Content: <input type="text" id="postContent"><br>
+        Author: <input type="text" id="postAuthor"><br>
     </main>
     <article></article>
     <script src="node_modules/lodash/lodash.min.js"></script>
@@ -22,6 +26,7 @@
       </div>
       <div class="main">
         <POST-TEMPLATE>
+        <COMMENTS-TEMPLATE>
       </div>
     </script>
 
@@ -30,11 +35,12 @@
         <header>TITLE</header>
         <footer>AUTHOR</footer>
       </article>
-      <div class="sidenav">
-      </div>
-      <div class="main">
-        <POST-TEMPLATE>
-      </div>
+    </script>
+
+    <script id="comments-template" type="text/x-lodash-template">
+      <COMMENT-TEMPLATE>
+      <COMMENT-TEMPLATE 2>
+      <COMMENT - FORM>
     </script>
 
     <script></script>
