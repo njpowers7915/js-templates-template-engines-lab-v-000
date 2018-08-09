@@ -4,13 +4,9 @@
     <title>JavaScript lodash Templates Lab</title>
   </head>
   <body>
+    <div id="page-template">
     <main>
-      <form id="post-form" onSubmit="createPost()">
-        Title: <input type="text" id="postTitle"><br>
-        Content: <input type="textarea" id="postContent"><br>
-        Author: <input type="text" id="postAuthor"><br>
-        <input type="submit">
-      </form>
+
     </main>
     <article></article>
     <script src="node_modules/lodash/lodash.min.js"></script>
@@ -26,8 +22,14 @@
     <script id="page-template" type="text/x-lodash-template">
       <div class="sidenav">
       </div>
-      <div class="main">
-        <POST-TEMPLATE>
+      <main>
+        <form id="post-form" onSubmit="createPost()">
+          Title: <input type="text" id="postTitle"><br>
+          Content: <input type="textarea" id="postContent"><br>
+          Author: <input type="text" id="postAuthor"><br>
+          <input type="submit">
+          </form>
+      </main>
         <COMMENTS-TEMPLATE>
       </div>
     </script>
