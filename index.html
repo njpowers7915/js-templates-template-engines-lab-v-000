@@ -6,7 +6,20 @@
 
 
   <body>
-    <script id="page-template"></script>
+    <script id="page-template" type="text/x-lodash-template">
+      <div class="sidenav">
+      </div>
+      <main>
+        <form id="post-form" onSubmit="createPost()">
+          Title: <input type="text" id="postTitle"><br>
+          Content: <input type="textarea" id="postContent"><br>
+          Author: <input type="text" id="postAuthor"><br>
+          <input type="submit">
+          </form>
+      </main>
+        <COMMENTS-TEMPLATE>
+      </div>
+    </script>
     <main>
 
     </main>
