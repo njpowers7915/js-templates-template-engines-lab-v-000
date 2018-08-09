@@ -4,7 +4,7 @@
     <title>JavaScript lodash Templates Lab</title>
   </head>
 
-  
+
   <body>
     <div id="page-template"></div>
     <main>
@@ -14,7 +14,7 @@
 
     <div id="comments-template"></div>
 
-    
+
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
@@ -50,9 +50,8 @@
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
       <form id="comment-form" onSubmit="postComment()">
-        Title: <input type="text" id="postTitle"><br>
-        Content: <input type="textarea" id="postContent"><br>
-        Author: <input type="text" id="postAuthor"><br>
+        Name: <input type="text" id="commenterName"><br>
+        Content: <input type="textarea" id="commentContent"><br>
         <input type="submit">
       </form>
       <COMMENT - FORM>
