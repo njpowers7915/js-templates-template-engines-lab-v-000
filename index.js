@@ -1,3 +1,10 @@
+function createPost() {
+  var title = document.getElementById("postTitle").value;
+  var content = document.getElementById("postContent").value;
+  var author = document.getElementById("postAuthor").value;
+}
+
+
 function postComment() {
  var commenter = document.getElementById("commenterName").value;
  var comment = document.getElementById("commentText").value;
